@@ -12,7 +12,7 @@ var Input = function(wrap, cfg){
     target[0].innerHTML = text;
   });
       
-  $('#input-close').on('click',function(e){
+  $('#input-done').on('click',function(e){
     wrap.css('display', 'none');
     target.css('text-decoration', 'none');
   });
@@ -20,7 +20,8 @@ var Input = function(wrap, cfg){
   /* reset */
   this.reset = function(el){
     var element = el[0].getBoundingClientRect(),
-        tmpLeft, ww = window.innerWidth;
+        tmpLeft, ww = window.innerWidth,
+        scrollTop = $(window).scrollTop();
     text = el[0].innerHTML;
     if (target) 
       target.css('text-decoration', 'none');
@@ -33,7 +34,7 @@ var Input = function(wrap, cfg){
         tmpLeft = element.left;
           
     wrap.css('display', 'block').css('left', tmpLeft)
-        .css('top', element.top + element.height);
+        .css('top', element.top + element.height + scrollTop);
   };
 };
    

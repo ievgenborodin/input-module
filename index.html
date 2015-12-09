@@ -69,16 +69,17 @@
   <!-- input html -->
   <div id="input-wrap">
     <div id="input">
-      <div id="input-close">&#10005;</div>
+      <div title="Done" id="input-done">&#10003;</div>
       <div class="brow" id="input-buttons">
-        <div id="input-backspace">&larr;</div>
+        <div title="Backspace" id="input-backspace">&larr;</div>
       </div>
     </div>
   </div>
   
   <script>
     var input = Input.init({
-      keys: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
+      keys: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
+             'a', 'b', 'c', 'd', 'e', 'f']
     });    
     
     $('.cols').on('click',function(e){

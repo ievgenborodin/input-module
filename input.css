@@ -1,11 +1,10 @@
 #input-wrap{
       display: none;
-      border-radius: 4px;
       position: absolute;
       text-align: center;
       height: auto;
-      background-color: #333;
-      color: #333;
+      color: #fff;
+      z-index: 999;
   }
   #input{
       position: relative;
@@ -14,31 +13,29 @@
       padding-bottom: .3em;
   }
   .bcol, #input-backspace{   
-      opacity: .8;
       float: left;
-      background-color: #eee;
+      background-color: #222;
   }
   .mtext{
       font-size: 16px;
       display: inline-block;
       vertical-align: middle;
   }
-  #input-close{
+  #input-done{
       position: absolute;
       font-size: 24px;
       right: -30px;
-      top: 0;
+      top: .2em;
       width: 30px;
       height: 30px;
-      color: #bbb;
-      background-color: #333;
+      color: #5dde79;
+      background-color: #222;
   }
-  #input-close:hover, .bcol:hover, 
+  #input-done:hover, .bcol:hover, 
   #input-backspace:hover, #speedNumber:hover, #dotsNumber:hover{
-      opacity: 1;
       cursor: pointer;
   }
-  .bcol, #input-display, 
-  #input-close, #input-backspace{
-      border-radius: 3px;
+  .bcol, 
+  #input-done, #input-backspace{
+      border-radius: 2px;
   }
