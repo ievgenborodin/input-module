@@ -10,7 +10,7 @@ Use:
 ```html
   <div id="input-wrap">
     <div id="input">
-      <div id="input-close">&#10005;</div>
+      <div title="Done" id="input-done">&#10003;</div>
       <div class="brow" id="input-buttons">
         <div id="input-backspace">&larr;</div>
       </div>
