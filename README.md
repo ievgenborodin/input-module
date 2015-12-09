@@ -1,6 +1,6 @@
 ## Custom Input module
 
-*While using web applications on mobile devices we don't necessary always need to have full keyboard, 
+*While using web applications on mobile devices we don't necessarily need to have full keyboard, 
 which covers the half of our screen, when we need only to enter an integer...*
 
 Use:
