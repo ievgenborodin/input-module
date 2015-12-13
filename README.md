@@ -19,15 +19,15 @@ Use:
 ```  
 * initialize with: 
 ```javascript
-var inputName = Input.init({
+var input = new Input({
       keys: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
-            'a', 'b', 'c', 'd', 'e', 'f'] /* list of chars you need */
+             'a', 'b', 'c', 'd', 'e', 'f'] /* list of chars you need */
     });
 ```
 * add event to element you need to type on 
 ```javascript
 $('.someHtmlElement').on('click',function(e){
-    input.reset($(this));
+    input.start($(this));   /* .start([element/display], [callback-updateOnKeyPress]) */
 });
 ```
 
